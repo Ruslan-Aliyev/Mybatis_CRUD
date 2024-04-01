@@ -9,14 +9,14 @@ public interface UserMapper {
     @Select("select * from users")
     List<User> findAll();
 
-//    @Insert("insert into users(name,salary) values(#{name},#{salary})")
-//    @SelectKey(statement = "SELECT LAST_INSERT_ID()", keyProperty = "id",
-//            before = false, resultType = Integer.class)
-//    void insert(User user);
-//
-//    @Update("update users set salary=#{salary} where name=#{name}")
-//    void update(User users);
-//
-//    @Delete("delete from users where name=#{name}")
-//    void delete(User users);
+    @Insert("insert into users(name,salary) values(#{name},#{salary})")
+    @SelectKey(statement = "SELECT LAST_INSERT_ID()", keyProperty = "id",
+            before = false, resultType = Integer.class)
+    void insert(User user);
+
+    @Update("update users set name=#{name}, salary=#{salary} where id=#{id}")
+    void update(Integer id, String name, Long salary);
+
+    @Delete("delete from users where id=#{id}")
+    void delete(Integer id);
 }

@@ -1,8 +1,18 @@
 package com.example.mybatisdemo.models;
 
-public class User {
+public class User
+{
+    private Integer id;
     private String name;
     private Long salary;
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
     public String getName() {
         return name;
@@ -19,14 +29,4 @@ public class User {
     public void setSalary(Long salary) {
         this.salary = salary;
     }
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    private Integer id;
 }
