@@ -1,0 +1,2 @@
+- https://www.youtube.com/watch?v=ZP8Um12Z_mk&list=PLkWz3Jbom0MzdSm1lGuXKzO33qOsmwvym&index=1
+- https://github.com/TechPrimers/spring-boot-mybatis-mysql-example-2
